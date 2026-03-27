@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 0.4rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.promise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.promise-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.promise-card:hover {
+  border-color: #64748b;
+}
+
+.promise-card.selected {
+  border-color: #6366f1;
+}
+
+.category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.politician {
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.promise-text {
+  color: #cbd5e1;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.source {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.divider {
+  text-align: center;
+  color: #475569;
+  font-size: 0.85rem;
+  margin: 1.25rem 0;
+  position: relative;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 1px;
+  background: #1e293b;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.custom-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+input, textarea {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  font-family: inherit;
+  width: 100%;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.check-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+
+.check-btn:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+.check-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #f87171;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.result-section {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.verdict-card {
+  background: #1e293b;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.verdict-badge {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.confidence {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.reasoning {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.quotes h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+blockquote {
+  background: #1e293b;
+  border-left: 3px solid #6366f1;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+blockquote p {
+  color: #cbd5e1;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+blockquote footer {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+blockquote footer a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.scope-note {
+  font-size: 0.8rem;
+  color: #475569;
+  border-top: 1px solid #1e293b;
+  padding-top: 1rem;
+}

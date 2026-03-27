@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "politician": "Micheál Martin",
+    "promise": "Deliver 40,000 new homes per year by 2030",
+    "source": "Programme for Government 2025",
+    "category": "Housing"
+  },
+  {
+    "id": "2",
+    "politician": "Paschal Donohoe",
+    "promise": "Reduce the cost of living through targeted energy credits",
+    "source": "Programme for Government 2025",
+    "category": "Cost of Living"
+  },
+  {
+    "id": "3",
+    "politician": "Micheál Martin",
+    "promise": "Establish a citizens' assembly on drug policy",
+    "source": "Fianna Fáil Manifesto 2024",
+    "category": "Policy"
+  }
+]
